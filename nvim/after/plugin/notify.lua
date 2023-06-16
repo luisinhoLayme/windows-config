@@ -1,0 +1,15 @@
+-- local ok, notify = pcall(require, "notify")
+-- if not ok then return end
+--
+-- -- this for transparency
+-- notify.setup {
+--   background_colour = "#000000",
+--   level = 1,
+--   minimum_width = 50,
+--   render = "minimal", -- default, minimal, simple, compact
+--   stages = "fade",    --fade_in_slide_out, fade, slide, static
+--   top_down = false,
+--   timeout = 1500,
+-- }
+-- -- this overwrites the vim notify function
+-- vim.notify = notify.notify

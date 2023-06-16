@@ -1,0 +1,51 @@
+{
+	"Media query": {
+		"prefix": "mq",
+		"body": [
+			"@include m.${1:tablet} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Log output to import media query"
+	},
+
+	"import @include m": {
+		"prefix": "in",
+		"body": [
+			"@include m.${1:mixin}"
+		],
+		"description": "Log output to import media query"
+	},
+
+	"import variable": {
+		"prefix": "imv",
+		"body": [
+			"@use 'abstracts/variables' as v;$0"
+		],
+		"description": "Log output to import variables"
+	},
+
+	"import mixins": {
+		"prefix": "imm",
+		"body": [
+			"@use 'abstracts/mixins' as m;$0"
+		],
+		"description": "Log output to import mixins"
+	},
+
+	"import variable webpack": {
+		"prefix": "imvw",
+		"body": [
+			"@use '@abstracts/variables' as v;$0"
+		],
+		"description": "Log output to import variables"
+	},
+
+	"import mixins webpack": {
+		"prefix": "immw",
+		"body": [
+			"@use '@abstracts/mixins' as m;$0"
+		],
+		"description": "Log output to import mixins"
+	}
+}

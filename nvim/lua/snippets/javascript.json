@@ -1,0 +1,168 @@
+{
+  "Print to console": {
+		"prefix": "clg",
+		"body": [
+			"console.log($0)"
+		],
+		"description": "Log output to console"
+	},
+
+	"Print to Etiqueta": {
+		"prefix": "ti",
+		"body": [
+			"<${0:div}/>"
+		],
+		"description": "Log output to Etiquita"
+	},
+
+	"Print to useDispatch": {
+		"prefix": "usedis",
+		"body": [
+			"const dispatch = useDispatch$0()"
+		],
+		"description": "Log output to useDispatch redux"
+	},
+
+	"Print to useSelector": {
+		"prefix": "usesel",
+		"body": [
+			"const ${2:select} = useSelector$0( state => state.${1:hash} )"
+		],
+		"description": "Log output to useDispatch redux"
+	},
+
+	"Print to importParams": {
+		"prefix": "impf",
+		"body": [
+			"import {$2} from '$1'"
+		],
+		"description": "Log output to import Params"
+	},
+
+	"Print to styled": {
+		"prefix": "ims",
+		"body": [
+			"import styled from 'styled-components'"
+		],
+		"description": "Log output to import styled"
+	},
+
+	"Print to styleComp": {
+		"prefix": "sc",
+		"body": [
+			"export const ${1:name} = styled.${2:hashtag}`",
+			"\t$0",
+			"`"
+		],
+		"description": "Log output to stylesComponent"
+	},
+
+	"Print to Etiquita": {
+		"prefix": "te",
+		"body": [
+			"<${1:div}",
+			"\t$0",
+			">",
+			"\t$2",
+			"</${1}>"
+		],
+		"description": "Log output to import etiqueta"
+	},
+
+	"Print to component": {
+		"prefix": "rcom",
+		"body": [
+			"import {} from 'react'",
+			"",
+			"const ${1:$TM_FILENAME_BASE} = ($2) => {",
+			"\treturn (",
+      "\t\t<>",
+			"\t\t\t$0",
+      "\t\t</>",
+			"\t)",
+			"}",
+			"",
+			"export default ${1}"
+		],
+		"description": "Log output to component"
+	},
+	"Print to com": {
+		"prefix": "scf",
+		"body": [
+			"const ${1:$TM_FILENAME_BASE} = ($2) => {",
+			"\treturn (",
+			"\t\t<>",
+      "\t\t\t$0",
+      "\t\t</>",
+			"\t)",
+			"}",
+			"",
+			"export default ${1}"
+		],
+		"description": "Log output to function"
+	},
+
+	"Print to CallBack": {
+		"prefix": "fn",
+		"body": [
+			"const $1 = ($2) => {",
+			"\t$0",
+			"}"
+		],
+		"description": "Log output to callback"
+	},
+  "Print to CallBack Export": {
+    "prefix": "fne",
+    "body": [
+      "export const $1 = ($2) => {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Log output to callback export"
+  },
+	"Print to useState": {
+		"prefix": "ruse",
+		"body": [
+			"const [ ${1:state}, set${1/(.*)/${1:/capitalize}/} ] = useState$0(${2:initialState})"
+		],
+		"description": "Log output to useState"
+	},
+
+	"Print to useEffect": {
+		"prefix": "rusee",
+		"body": [
+			"useEffect$1(() => {",
+			"\t$0",
+			"}, [])"
+		],
+		"description": "Log output to useEffect"
+	},
+
+	"Print to describe and test": {
+		"prefix": "desct",
+		"body": [
+			"describe('$1', () => {",
+      "",
+			"\ttest('should $2', () => {",
+      "",
+      "\t\t$0",
+      "",
+      "\t});",
+      "",
+			"})"
+		],
+		"description": "Log output to describe and test"
+	},
+
+	"Print to test": {
+		"prefix": "test",
+		"body": [
+			"test('should $1', () => {",
+      "",
+      "\t$0",
+      "",
+      "})"
+		],
+		"description": "Log output to test"
+	}
+}
